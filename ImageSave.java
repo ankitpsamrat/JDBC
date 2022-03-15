@@ -6,7 +6,7 @@ public class ImageSave {
         try {
             // load driver
 
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
             // create connection
 

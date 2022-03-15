@@ -6,7 +6,7 @@ public class Fun {
         try {
             // load the driver
 
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
             // create a connection
 
@@ -23,7 +23,7 @@ public class Fun {
 
             PreparedStatement pstmt = con.prepareStatement(q);
 
-            // set value
+            // insert default value
 
             // pstmt.setString(1, "Samrat");
             // pstmt.setString(2, "Varanasi");
@@ -32,7 +32,7 @@ public class Fun {
             // pstmt.setString(1, "Pratap");
             // pstmt.setString(2, "Uttar Pradesh");
 
-            // when user input
+            // take user input
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             System.out.print("Enter name : ");
